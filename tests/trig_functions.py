@@ -1,5 +1,3 @@
-import numpy as np
-from functools import lru_cache
 from functions1 import factorial
 
 __all__ = ['sin']
