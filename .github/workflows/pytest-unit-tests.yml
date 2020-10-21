@@ -38,8 +38,6 @@ jobs:
       run: |
         $RUN pytest $TESTS
 
-
-  pytest:
     name: ${{ matrix.name }}
     runs-on: "${{ matrix.os }}"
 
