@@ -10,7 +10,7 @@ on:
     branches:
       - main
 
-job1:
+jobs:
   pytest:
     name: unit testing
     runs-on: ubuntu-latest
@@ -38,7 +38,7 @@ job1:
       run: |
         $RUN pytest $TESTS
 
-job2:
+
   pytest:
     name: ${{ matrix.name }}
     runs-on: "${{ matrix.os }}"
