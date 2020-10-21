@@ -40,7 +40,7 @@ jobs:
           $RUN pytest $TESTS
 
   job2:
-    pytest:
+    pytest2:
       name: ${{ matrix.name }}
       runs-on: "${{ matrix.os }}"
 
@@ -80,7 +80,7 @@ jobs:
             pip3 install -e
             pip3 install -r requirements.txt
         
-        - name: Install dependencies (MacOsX)
+        - name: Install dependencies (MacOSX)
           if: matrix.os == 'macos-latest'
           run: |
             curl https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O -| python
